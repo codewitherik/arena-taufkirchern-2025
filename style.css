@@ -1,0 +1,151 @@
+/* custom css */
+
+/* Reset Browser option and base styles */
+
+/* COPYRIGHT 2025 codewitherik */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  background-color: gold;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* header css section */
+
+.header {
+  background-color: red;
+  color: beige;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 2.0rem;
+  font-weight: 500;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Hero-Section */
+
+.hero {
+  background: url(https://media.redbullmuenchen.de/image/upload/c_scale,w_792,f_auto/f_auto/q_auto/v1736535090/cp-d1-RBM-BHV25-003k.jpg) no-repeat center cover ;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h2 {
+  font-size: 3rem large;
+  margin-bottom: 20px;
+}
+
+/** About Section */
+
+.about {
+  background-color: #ffcc00;
+  padding: 40px 0;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+.about ul {
+  margin-top: 15px;
+  list-style: none;
+  line-height: 1.9;
+}
+
+/* Gallery section */
+
+.gallery {
+  background-color: gold;
+  padding: 0;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  border-radius: 10px;
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* contact section */
+
+.contact {
+  background-color: white;
+  padding: 40px 0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid gold;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: gold;
+}
+
+/* Footer */
+.footer {
+  background-color: brown;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+

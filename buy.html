@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets kaufen | Arena Taufkirchern</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .buy-section {
+      background-color: #fff;
+      padding: 40px 0;
+    }
+
+    .buy-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .buy-form h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .buy-form label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .buy-form input,
+    .buy-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .buy-form button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #004080;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .buy-form button:hover {
+      background-color: #003060;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Arena Taufkirchern</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="about.html">Info</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="buy.html">Tickets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="buy-section">
+    <div class="container">
+      <form class="buy-form">
+        <h2>Ticket kaufen</h2>
+
+        <label for="event">Event auswählen</label>
+        <select id="event" name="event" required>
+          <option value="">Bitte wählen...</option>
+          <option value="eishockey">Eishockey Turnier 2025</option>
+          <option value="familientag">Familien-Sporttag</option>
+        </select>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Dein Name" required>
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" placeholder="Deine E-Mail" required>
+
+        <label for="tickets">Anzahl Tickets</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+
+        <label for="payment">Zahlungsart</label>
+        <select id="payment" name="payment" required>
+          <option value="">Bitte wählen...</option>
+          <option value="bar">Vor Ort (Bar)</option>
+          <option value="karte">Kredit-/EC-Karte</option>
+        </select>
+
+        <button type="submit">Jetzt Ticket sichern</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Arena Taufkirchern | Alle Rechte vorbehalten</p>
+    </div>
+  </footer>
+</body>
+</html>

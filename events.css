@@ -1,0 +1,23 @@
+.event {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 6px solid #004080;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .event:hover {
+    transform: translateY(-4px);
+  }
+
+  .event h3 {
+    color: #004080;
+    margin-bottom: 10px;
+  }
+
+  .event p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
